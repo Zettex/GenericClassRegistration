@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace WebApplication1
+﻿namespace WebApplication1
 {
-    public class Child1OfEntity : ChildOfBaseClass
+    public class Child1OfEntity : BaseChildOfEntity
     {
         public int Revision1 { get; set; }
     }

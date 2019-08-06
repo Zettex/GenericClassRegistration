@@ -8,16 +8,17 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IAccessPolicyService<BaseClass<BaseEntity>> _service;
+        private readonly IAccessPolicyService<ChildOfBaseClass<BaseChildOfEntity>> _service;
 
-        public HomeController(IAccessPolicyService<BaseClass<BaseEntity>> service)
+        public HomeController(IAccessPolicyService<ChildOfBaseClass<BaseChildOfEntity>> service)
         {
             _service = service;
         }
 
         public ActionResult Index()
         {
-            bool b = _service.Policy.GetFalse();
+            string b1 = _service.Policy.GetSuperFalse(new Child1OfEntity());
+            string b2 = _service.Policy.GetSuperFalse(new Child2OfEntity());
             return View();
         }
 

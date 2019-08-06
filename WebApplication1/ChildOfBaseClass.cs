@@ -1,10 +1,10 @@
 ﻿namespace WebApplication1
 {
-    public class ChildOfBaseClass<T> : BaseClass<T> where T : Child2OfEntity
+    public class ChildOfBaseClass<T> : BaseClass<T> where T : BaseChildOfEntity
     {
-        public bool GetSuperFalse()
+        public string GetSuperFalse(T entity)
         {
-            return true;
+            return typeof(T).ToString();
         }
     }
 }

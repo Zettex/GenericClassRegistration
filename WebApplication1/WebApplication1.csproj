@@ -141,6 +141,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="BaseChildOfEntity.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ChildOfBaseClass.cs" />
@@ -148,7 +149,6 @@
     <Compile Include="Child2OfEntity.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="BaseEntity.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
